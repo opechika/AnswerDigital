@@ -3,10 +3,20 @@ package com.demoqa.stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RegistrationFormSteps {
+
+    WebDriver driver;
+
     @Given("I am on Practice Form page")
     public void i_am_on_practice_form_page() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+
+        driver.navigate().to("https://demoqa.com/automation-practice-form");
 
     }
 
