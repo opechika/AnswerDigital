@@ -3,6 +3,7 @@ Feature:Student Registration Form
   I want the ability to enter my details into the registration form
   So that I can submit it
 
+
   Scenario Outline: Student can successfully submit Registration Form
     Given I am on Practice Form page
     When I enter my "<FirstName>" into  first name field
@@ -22,7 +23,9 @@ Feature:Student Registration Form
 
     Examples: Form Data
       | FirstName     | LastName     | Email     | Gender | MobileNumber     | DateOfBirth | Subject     | Hobbies | Optional | Address     | State         | City |
-      | fakeFirstName | fakeLastName | fakeEmail | Male   | fakeMobileNumber | 24 May 1979 | fakeSubject | Sports  | False    | fakeAddress | Uttar Pradesh | Agra |
+      | fakeFirstName | fakeLastName |           | Male   | fakeMobileNumber |             |             |         |          |             |               |      |
+      | fakeFirstName | fakeLastName | fakeEmail | Female | fakeMobileNumber | 24 May 1979 | fakeSubject | Sports  | False    | fakeAddress | Uttar Pradesh | Agra |
+      | fakeFirstName | fakeLastName | fakeEmail | Female | fakeMobileNumber | 24 May 1979 | fakeSubject | Sports  | True     | fakeAddress | Uttar Pradesh | Agra |
 
 
 
