@@ -3,7 +3,7 @@ Feature:Student Registration Form
   I want the ability to enter my details into the registration form
   So that I can submit it
 
-
+@ignore
   Scenario Outline: Student can successfully submit Registration Form
     Given I am on Practice Form page
     When I enter my "<FirstName>" into  first name field

@@ -60,8 +60,18 @@ public class BasePage extends DriverManager
 
     public void waitForElementToBeClickable(WebElement element)
     {
-        wait = new WebDriverWait(driver, 30);
+        waitFor();
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public void waitForAlert()
+    {
+        waitFor();
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
+    private void waitFor() {
+        wait = new WebDriverWait(driver, 30);
     }
 
     public void scrollToElement(WebElement element)
