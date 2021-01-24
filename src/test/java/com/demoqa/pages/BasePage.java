@@ -2,10 +2,7 @@ package com.demoqa.pages;
 
 import com.demoqa.common.DriverManager;
 import com.demoqa.libs.Utils;
-import com.github.javafaker.Faker;
-import io.cucumber.java.bs.A;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -76,8 +73,18 @@ public class BasePage extends DriverManager
 
     public void scrollToElement(WebElement element)
     {
-        actions = new Actions(driver);
+        actionsInit();
         actions.moveToElement(element).build().perform();
+    }
+
+    private void actionsInit() {
+        actions = new Actions(driver);
+    }
+
+    public void dragAndDropAnElement(WebElement dragElement, WebElement dropElement)
+    {
+        actionsInit();
+        actions.dragAndDrop(dragElement, dropElement);
     }
 
     public void scrollDown()
