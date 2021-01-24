@@ -18,7 +18,7 @@ How to run via command line/terminal
 How to check the report
 
     1. After the run, either check the Run window and click on the report link that is published
-    2. Or in IntelliJ, nagivate to target > pretty-cucumber > cucumber-html-reports and open `overview-features.html` file in any browser
+    2. Or in IntelliJ, navigate to target > pretty-cucumber > cucumber-html-reports and open `overview-features.html` file in any browser
     3. From command line/terminal, copy the line published at the end of the run and paste that into a browser
 
 
