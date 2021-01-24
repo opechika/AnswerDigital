@@ -84,7 +84,7 @@ public class BasePage extends DriverManager
     public void dragAndDropAnElement(WebElement dragElement, WebElement dropElement)
     {
         actionsInit();
-        actions.dragAndDrop(dragElement, dropElement);
+        actions.dragAndDrop(dragElement, dropElement).build().perform();
     }
 
     public void scrollDown()

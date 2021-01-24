@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         "de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"}
         ,glue = {"com/demoqa/hooks","com/demoqa/stepDefinitions"}
         ,tags = "not @ignore"
+        ,publish = true
 
 
 
