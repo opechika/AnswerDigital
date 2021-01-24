@@ -23,5 +23,3 @@ Feature:Student Registration Form
       | fakeFirstName | fakeLastName | fakeEmail | Other  | fakeMobileNumber | 4 May 1979  | Sports  | False    | fakeAddress |
       | fakeFirstName | fakeLastName | fakeEmail | Female | fakeMobileNumber | 2 May 1979  | Sports  | True     | fakeAddress |
 
-
-
