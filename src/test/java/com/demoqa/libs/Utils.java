@@ -11,7 +11,7 @@ public class Utils {
     public String TOOLTIPS = "tool-tips";
     public String DROPPABLE = "droppable";
     public String MODAL_DIALOGS = "modal-dialogs";
-    public String DATE_PICKERS = "date-pickers";
+    public String DATE_PICKERS = "date-picker";
 
     Faker faker = new Faker();
 
