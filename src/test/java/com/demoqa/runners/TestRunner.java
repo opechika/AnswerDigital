@@ -9,8 +9,9 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/com/demoqa/features"}
         ,plugin = {"pretty", "json:target/report.json",
         "de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"}
-        ,glue = {"com/demoqa/stepDefinitions"}
+        ,glue = {"com/demoqa/hooks","com/demoqa/stepDefinitions"}
         ,tags = "not @ignore"
+
 
 
         )
