@@ -1,6 +1,7 @@
 How to work with the project
 
 Clone the project from https://github.com/opechika/AnswerDigital using
+
 `git clone https://github.com/opechika/AnswerDigital.git`
 
 How to run the project via IntelliJ
