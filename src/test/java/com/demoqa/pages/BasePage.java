@@ -77,7 +77,7 @@ public class BasePage extends DriverManager
     public void scrollToElement(WebElement element)
     {
         actions = new Actions(driver);
-        actions.moveToElement(element);
+        actions.moveToElement(element).build().perform();
     }
 
     public void scrollDown()
