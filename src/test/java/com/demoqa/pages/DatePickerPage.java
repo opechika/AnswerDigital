@@ -1,6 +1,7 @@
 package com.demoqa.pages;
 
 import com.demoqa.libs.CalculateDates;
+import com.demoqa.libs.Utils;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -63,6 +64,11 @@ public class DatePickerPage extends BasePage
 
     public void selectDayFromDatePicker()
     {
+        if(dayToSelect.startsWith("0"))
+        {
+            new Utils().removeLeadingZeros(dayToSelect);
+        }
+
         selectDateDay(dayToSelect);
     }
 

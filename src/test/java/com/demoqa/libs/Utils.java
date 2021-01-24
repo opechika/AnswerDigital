@@ -45,4 +45,10 @@ public class Utils {
         return faker.address().fullAddress();
     }
 
+    public String removeLeadingZeros(String digits)
+    {
+        String regex = "^0+";
+        return digits.replaceAll(regex, "");
+    }
+
 }
