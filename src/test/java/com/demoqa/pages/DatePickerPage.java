@@ -32,6 +32,12 @@ public class DatePickerPage extends BasePage
     @FindBy(css = "div[class*='react-datepicker__day react-datepicker__day']")
     private List<WebElement> dayPicker;
 
+
+    public void launchDatePickerUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.DATE_PICKERS);
+    }
+
     public void clickOnDatePicker()
     {
         datePicker.click();

@@ -13,7 +13,7 @@ public class DatePickerSteps extends BasePage
 
     @Given("I am on date picker page")
     public void i_am_on_date_picker_page() {
-        datePickerPage.launchDatePickerPage();
+        datePickerPage.launchDatePickerUrl();
     }
 
     @When("I click on date field")

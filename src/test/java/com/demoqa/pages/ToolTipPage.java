@@ -21,6 +21,11 @@ public class ToolTipPage extends BasePage
     @FindBy(css = "[aria-describedby = 'textFieldToolTip']")
     private WebElement fieTooltip;
 
+    public void launchToolTipUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.TOOLTIPS);
+    }
+
     public void hooverOverTooltipButton()
     {
         scrollToElement(tooltipButton);

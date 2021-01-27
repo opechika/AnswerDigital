@@ -17,38 +17,6 @@ public class BasePage extends DriverManager
     public Actions actions;
     public JavascriptExecutor js;
 
-
-    public void launchAutomationPracticeFormPage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.AUTOMATION_PRACTICE_FORM);
-    }
-
-    public void launchAlertPage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.ALERTS);
-    }
-
-    public void launchToolTipsPage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.TOOLTIPS);
-    }
-
-    public void launchDroppablePage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.DROPPABLE);
-    }
-
-    public void launchModalStartPage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.MODAL_DIALOGS);
-    }
-
-    public void launchDatePickerPage()
-    {
-        driver.navigate().to(utils.BASE_URL + utils.DATE_PICKERS);
-    }
-
-
     public void selectElementByVisibleText(WebElement element, String text)
     {
         select = new Select(element);

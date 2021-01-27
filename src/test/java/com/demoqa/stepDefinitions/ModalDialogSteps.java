@@ -14,7 +14,7 @@ public class ModalDialogSteps extends BasePage
 
     @Given("I am on modal dialog page")
     public void i_am_on_modal_dialog_page() {
-        modalDialogPage.launchModalStartPage();
+        modalDialogPage.launchModalUrl();
     }
 
     @When("I click on small modal page")

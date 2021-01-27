@@ -14,7 +14,7 @@ public class AlertSteps extends BasePage
 
     @Given("I am on Alert page")
     public void i_am_on_alert_page() {
-        alertPage.launchAlertPage();
+        alertPage.launchAlertUrl();
     }
 
     @When("I click on the second alert button")

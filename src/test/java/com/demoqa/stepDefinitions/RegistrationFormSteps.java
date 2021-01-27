@@ -13,7 +13,7 @@ public class RegistrationFormSteps extends BasePage {
 
     @Given("I am on Practice Form page")
     public void i_am_on_practice_form_page() {
-        practiceFormPage.launchAutomationPracticeFormPage();
+        practiceFormPage.launchPracticeUrl();
     }
 
     @When("I enter my {string} into  first name field")

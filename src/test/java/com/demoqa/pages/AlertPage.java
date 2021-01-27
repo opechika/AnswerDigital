@@ -11,6 +11,11 @@ public class AlertPage extends BasePage
         this.driver = driver;
     }
 
+    public void launchAlertUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.ALERTS);
+    }
+
     @FindBy(id = "timerAlertButton")
     private WebElement secondAlert;
 

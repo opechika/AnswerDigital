@@ -55,6 +55,10 @@ public class PracticeFormPage extends BasePage{
     private WebElement closeModal;
 
 
+    public void launchPracticeUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.AUTOMATION_PRACTICE_FORM);
+    }
 
     public void enterFirstName(String name)
     {

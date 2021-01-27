@@ -13,7 +13,7 @@ public class DraggableSteps extends BasePage
 
     @Given("I am on draggable page")
     public void i_am_on_draggable_page() {
-        dragAndDropPage.launchDroppablePage();
+        dragAndDropPage.launchDragAndDropUrl();
     }
 
     @When("I dragged and dropped the element from one location to another")

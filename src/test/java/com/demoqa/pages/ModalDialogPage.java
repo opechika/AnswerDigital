@@ -16,6 +16,11 @@ public class ModalDialogPage extends BasePage
     @FindBy(id = "closeSmallModal")
     private WebElement closeModal;
 
+    public void launchModalUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.MODAL_DIALOGS);
+    }
+
     public void displaySmallModal()
     {
         smallModal.click();

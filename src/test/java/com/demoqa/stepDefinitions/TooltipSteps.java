@@ -13,7 +13,7 @@ public class TooltipSteps extends BasePage
 
     @Given("I am on tool tip page")
     public void i_am_on_tool_tip_page() {
-        toolTipPage.launchToolTipsPage();
+        toolTipPage.launchToolTipUrl();
     }
 
     @When("I hoover over tooltip button")

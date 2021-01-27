@@ -19,6 +19,11 @@ public class DragAndDropPage extends BasePage
     @FindBy(css = "#droppable p")
     private WebElement dropped;
 
+    public void launchDragAndDropUrl()
+    {
+        driver.navigate().to(utils.BASE_URL+utils.DROPPABLE);
+    }
+
     public void dragAndDrop()
     {
         dragAndDropAnElement(dragElement, dropElement);
